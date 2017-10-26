@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Col, Row} from 'react-bootstrap'
+import { connect } from "redux-zero/react";
+
+
 const App = ({comments}) => {
   const commentsUsers = comments.map((commentUser, index)=>{
     return (
@@ -40,4 +43,7 @@ const App = ({comments}) => {
     );
 }
 
-export default App;
+
+const mapToProps = ({ comments }) => ({ comments });
+
+export default connect(mapToProps)(App);
