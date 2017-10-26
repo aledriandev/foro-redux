@@ -1,23 +1,59 @@
-.bg-blue{
-  background-color: #6da2a9;
+*{
+  box-sizing: border-box;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.bg-light-blue{
-  background-color: #9fcbd2;
-}
-
-.bg-light-yellow{
-  background-color: #fbe783;
-}
-
-.bg-white{
-  background-color: white;
-}
+.bg-blue{background-color: #6da2a9;}
+.bg-light-blue{background-color: #9fcbd2;}
+.bg-light-yellow{background-color: #fbe783;}
+.bg-white{background-color: white;}
+.c-black{color: black;}
+.c-blue{color: #6da2a9;}
+.c-light-blue{color: #9fcbd2;}
+.c-light-yellow{color: #fbe783;}
+.c-white{color: white;}
 
 .big-font{
-  height: 100vh;
+  height: 100%;
+  padding:  5% 15%;
 }
 
 form input{
-  
+  background-color: white;
+  color: black;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+.content-form{
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.container-group{
+  width: 90%;
+}
+
+.avatar{
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 100px;
+  padding: 1%;
+}
+
+.bar{
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.mg-0{
+  margin: 0;
 }
