@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {Col, Row} from 'react-bootstrap'
 import { connect } from "redux-zero/react";
-
+import {deleteComment} from './actions' 
 
 const App = ({comments}) => {
   const commentsUsers = comments.map((commentUser, index)=>{
@@ -17,6 +17,7 @@ const App = ({comments}) => {
             <p className='mg-0'><b>{commentUser.name}</b></p>
             <hr className='bar'/>
             <p>{commentUser.comment}</p>
+            <button className='btn' onClick={()=>deleteComment(index)}>Delete</button>
           </Col>
         </Row>
       </li>
